@@ -59,10 +59,10 @@ const PlaylistForm = ({ setPlaylistData }) => {
                 id="playlist-link" 
                 value={playlistLink}
                 onChange={(e) => setPlaylistLink(e.target.value)}
-                className="w-full p-2 border rounded mb-4 focus:outline-none focus:border-blue-500" 
+                className="w-full p-2 border rounded mb-4 focus:outline-none focus:border-blue-500 dark:text-black" 
                 placeholder="youtube.com/playlist?list=ID"
             />
-            <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition">Analyze</button>
+            <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition ">Analyze</button>
             {error && <p className="text-red-500 mt-2">{error}</p>}
         </form>
     );
