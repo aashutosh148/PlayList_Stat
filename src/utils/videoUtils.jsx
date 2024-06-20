@@ -1,4 +1,3 @@
-// src/utils/videoUtils.js
 export function extractPlaylistId(url) {
     const regex = /list=([^&]+)/;
     const match = url.match(regex);

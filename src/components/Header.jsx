@@ -9,7 +9,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <h1 className="text-2xl font-bold">Playlist Stats</h1>
       </div>
       <div className="flex items-center space-x-4">
-        <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="text-blue-400">GitHub</a>
+        <a href="https://github.com/aashutosh148" target="_blank" rel="noopener noreferrer" className="text-blue-400">GitHub</a>
         <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </header>

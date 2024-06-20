@@ -1,4 +1,3 @@
-// src/components/PlaylistForm.js
 import React, { useState } from 'react';
 import { extractPlaylistId, fetchVideos, fetchVideoDurations, formatDuration, calculateAdjustedDuration } from '../utils/videoUtils';
 
@@ -7,7 +6,7 @@ import { extractPlaylistId, fetchVideos, fetchVideoDurations, formatDuration, ca
 const PlaylistForm = ({ setPlaylistData }) => {
     const [playlistLink, setPlaylistLink] = useState('');
     const [error, setError] = useState(null);
-    const apiKey = import.meta.env.VITE_API_KEY; // Replace with your actual API key
+    const apiKey = import.meta.env.VITE_API_KEY; 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,7 +28,15 @@ const PlaylistForm = ({ setPlaylistData }) => {
             const speed1_5x = calculateAdjustedDuration(totalDurationInSeconds, 1.5);
             const speed1_75x = calculateAdjustedDuration(totalDurationInSeconds, 1.75);
             const speed2x = calculateAdjustedDuration(totalDurationInSeconds, 2.0);
-
+            // console.log({
+            //     totalVideos,
+            //     avgDuration,
+            //     totalDuration,
+            //     speed1_25x,
+            //     speed1_5x,
+            //     speed1_75x,
+            //     speed2x,
+            // });
             setPlaylistData({
                 totalVideos,
                 avgDuration,
@@ -46,7 +53,7 @@ const PlaylistForm = ({ setPlaylistData }) => {
 
     return (
         <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-8 rounded shadow-md w-full max-w-md">
-            <label htmlFor="playlist-link" className="block mb-2">Find the length of any YouTube playlist:</label>
+            <label htmlFor="playlist-link" className="block mb-2">Enter the YouTube playlist Link OR Playlist ID:</label>
             <input 
                 type="text" 
                 id="playlist-link" 
