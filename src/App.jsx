@@ -6,7 +6,7 @@ import PlaylistForm from './components/PlaylistForm';
 import PlaylistAnalysisResults from './components/PlaylistAnalysisResults';
 
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
     const [playlistData, setPlaylistData] = useState(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const App = () => {
     };
 
     return (
-        <div className={`min-h-screen flex flex-col justify-between bg-gray-100 dark:bg-gray-800 text-black dark:text-white transition duration-500`}>
+        <div className={`min-h-screen flex flex-col justify-between bg-gray-100 dark:bg-slate-800 text-black dark:text-white transition duration-700`}>
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <main className="flex-grow flex flex-col items-center justify-center p-4">
                 <PlaylistForm setPlaylistData={setPlaylistData} />

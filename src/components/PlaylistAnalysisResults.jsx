@@ -12,9 +12,9 @@ const PlaylistAnalysisResults = ({ data }) => {
     return (
         <div className="bg-white dark:bg-gray-800 p-8 rounded shadow-md w-full max-w-md mt-8">
             <h2 className="text-xl font-bold mb-4">Playlist Analysis Results</h2>
-            <p>No of videos: ${totalVideos}</p>
-            <p>Average length of video: ${formatResult(avgDuration)}</p>
-            <p>Total length of playlist: ${formatResult(totalDuration)}</p>
+            <p>No of videos: {totalVideos}</p>
+            <p>Average length of video: {formatResult(avgDuration)}</p>
+            <p>Total length of playlist: {formatResult(totalDuration)}</p>
             <p>On 1.25x: {formatResult(speed1_25x)}</p>
             <p>On 1.50x: {formatResult(speed1_5x)}</p>
             <p>On 1.75x: {formatResult(speed1_75x)}</p>
