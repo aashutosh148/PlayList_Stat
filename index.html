@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
+    <meta name="description"
+        content="Analyzes YouTube playlists and calculates statistics like number of videos, average length, and total duration.">
+    <meta name="keywords"
+        content="YouTube playlist analysis, video analysis tool, YouTube SEO, video length calculator">
     <link rel="icon" type="image/svg+xml" href="/youtube.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebApplication",
+          "name": "Playlist STAT",
+          "description": "Analyze YouTube playlists to calculate total duration, average video duration, and adjusted playback times at different speeds.",
+          "url": "https://playlist-length.netlify.app/",
+          "operatingSystem": "All",
+          "author": {
+            "@type": "Person",
+            "name": "Aashutosh Singh",
+            "url": "https://github.com/aashutosh148/",
+            "sameAs": [
+                "https://twitter.com/aashutosh148",
+                "https://www.linkedin.com/in/aashutosh148"
+            ]
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://playlist-length.netlify.app/",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          },
+          "keywords": "YouTube playlist analysis, playlist duration calculator, video length analysis, playback speed adjustment"
+        }
+    </script>
+
     <title>Playlist STAT</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
+
 </html>
